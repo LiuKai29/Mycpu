@@ -1,41 +1,22 @@
-
-
-# --- 编辑器/IDE ---
-# VS Code 本地配置 (如果不希望同步个人设置)
 .vscode/
 
-
-# --- 仿真波形 (非常重要，这些文件会很大) ---
 *.vcd
 *.fst
 *.lxt
 *.lxt2
 *.wlf
 
-# --- Verilator ---
-# Verilator 编译生成的 C++ 中间文件和可执行文件的目录
-obj_dir/
-
-# --- Icarus Verilog ---
-# 默认编译输出
-a.out
-# 你自定义的编译输出文件名 (之前例子中用到的)
-rf_wave
-
-# --- 临时/日志文件 ---
 *.log
 *.jou
 *.pb
 
-# --- C/C++ 软件部分 (如果后续写汇编或C) ---
 *.o
 *.a
 *.bin
 *.hex
 *.dump
 
-# --- 本仓库 Makefile 生成目录/文件 ---
-# 通用 obj 目录（minicpu_env/func、mycpu_env/func 等）
+
 obj/
 
 project/
@@ -91,38 +72,8 @@ thinkpad_top/thinpad_top.sim/sim_1/behav/xsim/
 xilinx_ip/
 
 
-/build/
+build/
 
-supervisor/kernel/.config_*
-supervisor/kernel/obj/
-supervisor/kernel/axi_ram.mif
-supervisor/kernel/kernel.bin
-supervisor/kernel/kernel.elf
-supervisor/kernel/kernel.s
-
-supervisor/utility/crypto/crypto.bin
-supervisor/utility/crypto/crypto_legacy.bin
-supervisor/utility/crypto/crypto.mif
-supervisor/utility/fibonacci/fibonacci.bin
-supervisor/utility/fibonacci/fibonacci.elf
-supervisor/utility/fibonacci/fibonacci.disasm
-supervisor/utility/fibonacci/fibonacci.mem
-supervisor/utility/fibonacci/fibonacci.mif
-supervisor/utility/fibonacci/fibonacci.o
-supervisor/utility/matrix/matrix.bin
-supervisor/utility/matrix/matrix.in
-supervisor/utility/matrix/matrix.mif
-supervisor/utility/matrix/matrix.out
-supervisor/utility/matrix/matrix_expected.bin
-supervisor/utility/matrix/matrix_expected.mif
-supervisor/utility/matrix/matrix_input.bin
-supervisor/utility/matrix/matrix_input.mif
-supervisor/utility/matrix/matrix_legacy.bin
-supervisor/utility/mixed/mixed.bin
-supervisor/utility/mixed/mixed.mif
-supervisor/utility/mixed/mixed.out
-supervisor/utility/mixed/mixed_signature.bin
-supervisor/utility/mixed/mixed_signature.mif
 
 .venv
 
